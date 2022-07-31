@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>System</title>
+</head>
+
+<body>
+	<img src="pagesImgs/wiki-logo.png" width=10%>
+	<h2>System</h2>
+	<h3>Definition of the System</h3>
+	<p>
+		Instagram is written in Python.
+
+		Instagram artificial intelligence (AI) describes content for visually impaired people that use screen
+		readers
+	</p>
+	<p>
+		We need to clarify the goal of the system. System design is such a vast topic; if we don’t narrow it down to a
+		specific purpose, it will become complicated to design the system, especially for newbies.
+	</p>
+	<p>
+		Instagram is a photo-sharing service that enables its users to upload and share their photos and videos with
+		other users, mostly their followers. As this is an exercise, we will design a simpler version of the main
+		Instagram service.
+	</p>
+	<p>
+		In this service, a user can share photos and follow other users. There will be a newsfeed for each user. The
+		‘News Feed’ consists of top photos of all the people the user follows.
+	</p>
+	<h3>Requirements of The System </h3>
+	<p>
+		In this part, we select the features of the system. The system requirements are divided into two parts:
+	</p>
+	<h3>
+		Functional Requirements:
+	</h3>
+	<p>
+		This type of requirement what the system has to deliver. You may say it is the main goal of the system.
+		Firstly, for Instagram, the users should be able to upload/download/view photos. Users may perform searches for
+		images based on photo/video titles. One User can follow other users. Another essential feature is that the
+		system should display a user’s News Feed that consists of photos of all the people the user follows.
+		As this is a practice for the system, we are not considering tags in photos, tag-based search, like and comment
+		features, etc.
+	</p>
+	<h3>
+		Availability and Reliability
+	</h3>
+	<p>
+		We can not lose the photos uploaded by the users. Reliability is a huge factor for this system. So, we need to
+		have more than one copy of each file. In that case, if one server is dead, we still have other copies of those
+		photos.
+	</p>
+	<p>
+		We can not have a single point of failure in a system. If we keep multiple copies of a component, it may remove
+		the single point of failure in the system. For making a highly available system, we need to keep multiple
+		replicas of the services in the system. So, even if some of the servers are down, the system may remain
+		available. Creating redundancy in a system also provides a backup in a crisis.
+	</p>
+	<h3>
+		Scalability
+	</h3>
+	<p>
+		For supporting millions of users, we need to partition our database to divide and store our data into different
+		DB servers. We can use database sharding for metadata.
+	</p>
+	<p><a href="../index.html" rel="prev">Voltar</a></p>
+
+
+</body>
+
+</html>
